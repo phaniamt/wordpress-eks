@@ -7,10 +7,17 @@ metadata:
 data:
   root-password: cGhhbmkxMjM=
   root-user: cm9vdA==
+  mysql-user: d29yZHByZXNz
+  mysql-password: d29yZHByZXNzMTIz
 
+ 
 # Encode base 64
 # echo -n phani123|base64
 # echo -n root|base64
+#echo -n wordpress|base64
+#echo -n wordpress123|base64
 # Decode base 64 
 # echo -n cGhhbmkxMjM= |base64 -d
 # echo -n cm9vdA== |base64 -d
+# echo -n d29yZHByZXNz |base64 -d
+# echo -n d29yZHByZXNzMTIz |base64 -d
