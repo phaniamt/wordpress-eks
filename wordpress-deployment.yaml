@@ -1,4 +1,4 @@
-apiVersion: apps/v1 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: wordpress
@@ -27,6 +27,11 @@ spec:
         env:
         - name: WORDPRESS_DB_HOST
           value: mysql
+        - name: WORDPRESS_DB_USER
+          valueFrom:
+            secretKeyRef:
+              name: mysql-secrets
+              key: mysql-user
         - name: WORDPRESS_DB_PASSWORD
           valueFrom:
             secretKeyRef:
