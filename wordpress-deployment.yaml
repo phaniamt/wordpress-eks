@@ -41,14 +41,18 @@ spec:
         - containerPort: 80
           name: wordpress
         readinessProbe:
-          tcpSocket:
+#          tcpSocket:
+          httpGet:
+           path: /
             port: 80
           initialDelaySeconds: 10
           timeoutSeconds: 1
           periodSeconds: 5
           successThreshold: 1
         livenessProbe:
-          tcpSocket:
+#          tcpSocket:
+          httpGet:
+           path: /
             port: 80
           initialDelaySeconds: 10
           timeoutSeconds: 1
