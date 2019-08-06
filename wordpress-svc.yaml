@@ -7,4 +7,4 @@ spec:
   - port: 80
   selector:
     app: wordpress
-  clusterIP: None
+ # clusterIP: None
