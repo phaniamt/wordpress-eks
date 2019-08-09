@@ -43,7 +43,7 @@ spec:
         readinessProbe:
 #          tcpSocket:
           httpGet:
-           path: /
+            path: /
             port: 80
           initialDelaySeconds: 10
           timeoutSeconds: 1
@@ -52,7 +52,7 @@ spec:
         livenessProbe:
 #          tcpSocket:
           httpGet:
-           path: /
+            path: /
             port: 80
           initialDelaySeconds: 10
           timeoutSeconds: 1
